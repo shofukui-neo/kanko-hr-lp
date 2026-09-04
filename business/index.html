@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>観光HR｜宿泊・観光に特化した総合人材サービス（株式会社ネオキャリア）</title>
+<meta name="description" content="人手不足で、売れる客室をあきらめない。繁忙期の応援から、正社員採用、外国人材、採用業務代行まで。宿泊・観光施設ごとの人員課題を整理し、必要な方法を組み合わせて支援します。">
+<meta property="og:title" content="観光HR｜宿泊・観光に特化した総合人材サービス">
+<meta property="og:description" content="人手不足で、売れる客室をあきらめない。施設ごとの人員課題に合わせて採用手段を組み合わせます。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b2a5b'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3E観%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/common.css">
+<style>
+.hero{position:relative;background:#fff;overflow:hidden;padding:64px 0 72px}
+.hero::before{content:"";position:absolute;right:-10%;top:-30%;width:60%;height:160%;background:linear-gradient(160deg,var(--sky) 0%,#d6e6fb 100%);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero{padding:36px 0 48px}.hero .lead br{display:none}.hero-ctas .btn{width:100%}.hero::before{width:100%;top:auto;bottom:-40%;height:80%;clip-path:polygon(0 30%,100% 0,100% 100%,0 100%)}}
+.hero .sub{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;max-width:100%;line-height:1.5;font-size:13px;font-weight:700;color:var(--navy);background:#fff;border:1px solid var(--line);padding:8px 14px;border-radius:8px;box-shadow:var(--shadow-sm)}
+.hero .sub b{background:var(--navy);color:#fff;padding:2px 8px;border-radius:4px;font-size:12px}
+.hero h1{font-size:clamp(28px,4.6vw,54px);font-weight:900;line-height:1.3;color:var(--navy);margin:20px 0 16px;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--blue);position:relative}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:10px;background:rgba(255,208,138,.7);z-index:-1}
+.hero .lead{font-size:clamp(15px,1.6vw,18px);color:var(--ink-2);line-height:1.9}
+.hero .lead strong{color:var(--navy);font-weight:800}
+.hero-ctas{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.hero-visual{position:relative;height:440px}
+.hero-visual img{position:absolute;object-fit:cover;border-radius:24px;box-shadow:var(--shadow);background:#9cc0f5}
+.hero-visual .a{width:68%;height:70%;right:0;top:0}
+.hero-visual .b{width:48%;height:48%;left:0;bottom:0;border:6px solid #fff}
+.hero-visual .stat{position:absolute;left:8%;top:6%;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);border-left:5px solid var(--orange)}
+.hero-visual .stat b{display:block;font-size:30px;font-weight:900;color:var(--navy);line-height:1.1}
+.hero-visual .stat small{font-size:11px;color:var(--ink-2);font-weight:700}
+.trust{background:var(--navy);color:#fff;padding:22px 0}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:900px){.trust .wrap{grid-template-columns:repeat(2,1fr)}}
+.trust .wrap>div{display:flex;align-items:center;gap:12px;font-size:13px;line-height:1.5}
+.trust .ic{font-size:28px}
+.trust b{display:block;font-size:17px;font-weight:900;color:#ffd08a}
+/* problems */
+.probs{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+@media(max-width:1000px){.probs{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.probs{grid-template-columns:1fr 1fr}}
+.prob{padding:22px 16px;text-align:center;position:relative}
+.prob .chk{width:30px;height:30px;border-radius:50%;background:var(--sky);color:var(--blue);display:grid;place-items:center;margin:0 auto 10px;font-weight:900}
+.prob .ic{font-size:36px;margin-bottom:6px}
+.prob b{display:block;color:var(--navy);font-size:15px;line-height:1.4}
+.prob small{display:block;color:var(--ink-2);font-size:12px;margin-top:6px;line-height:1.5}
+.prob-note{margin-top:28px;background:var(--sky);border-radius:16px;padding:22px 24px;text-align:center;color:var(--navy);font-weight:700;font-size:16px;line-height:1.7}
+.prob-note span{color:var(--blue)}
+/* solutions */
+.sol-table{display:grid;gap:12px}
+.sol{display:grid;grid-template-columns:200px 44px 1fr;gap:16px;align-items:center;padding:18px 22px;transition:transform .2s,box-shadow .2s}
+.sol:hover{transform:translateX(4px);box-shadow:var(--shadow)}
+@media(max-width:700px){.sol{grid-template-columns:1fr;gap:8px}.sol .arrow{display:none}}
+.sol .need{font-weight:800;color:var(--navy);font-size:14px;line-height:1.4;padding:10px 14px;border-radius:10px;background:var(--sky)}
+.sol .need.hot{background:#fff1e6;color:#c2410c}
+.sol .arrow{color:var(--blue);font-size:24px;text-align:center}
+.sol .svc{display:flex;gap:14px;align-items:center}
+.sol .svc .num{width:38px;height:38px;border-radius:10px;background:var(--navy);color:#fff;font-weight:900;display:grid;place-items:center;flex:0 0 auto;font-size:16px}
+.sol .svc .ic{font-size:30px;flex:0 0 auto}
+.sol .svc b{display:block;color:var(--navy);font-size:16px}
+.sol .svc span{font-size:13px;color:var(--ink-2)}
+.sol-note{margin-top:28px;text-align:center}
+.sol-note p{font-size:13px;color:var(--ink-2)}
+.sol-note h3{font-size:clamp(18px,2.6vw,24px);font-weight:900;color:var(--navy);margin-top:4px}
+/* combine visual */
+.combo{background:var(--navy);color:#fff;border-radius:24px;padding:40px 32px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;margin-top:44px}
+@media(max-width:800px){.combo{grid-template-columns:1fr;padding:32px 22px}}
+.combo h3{font-size:22px;font-weight:900;line-height:1.4}
+.combo p{opacity:.9;font-size:14px;margin-top:10px}
+.combo .ex{display:grid;gap:10px}
+.combo .ex div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:12px 16px;font-size:13px}
+.combo .ex b{color:#ffd08a;display:block;font-size:12px;letter-spacing:.05em;margin-bottom:4px}
+/* reasons */
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:800px){.reasons{grid-template-columns:1fr}}
+.reason{padding:30px 26px}
+.reason .num{font-size:12px;font-weight:900;color:var(--blue);letter-spacing:.2em}
+.reason .ic{font-size:44px;margin:10px 0 8px}
+.reason h3{font-size:19px;font-weight:900;color:var(--navy);line-height:1.4}
+.reason p{font-size:13.5px;color:var(--ink-2);margin-top:10px}
+.reason .kpi{display:flex;gap:16px;margin-top:14px;flex-wrap:wrap}
+.reason .kpi div{font-size:11px;color:var(--ink-2);font-weight:700}
+.reason .kpi b{display:block;font-size:22px;color:var(--navy);font-weight:900;line-height:1.1}
+/* stat band */
+.band{background:linear-gradient(135deg,#0b2a5b,#1d6fe0);color:#fff}
+.band .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+@media(max-width:800px){.band .wrap{grid-template-columns:1fr}}
+.band .big{font-size:clamp(56px,8vw,96px);font-weight:900;line-height:1;color:#ffd08a;letter-spacing:-.02em}
+.band h3{font-size:clamp(20px,2.6vw,28px);font-weight:900;line-height:1.4;margin-top:8px}
+.band p{opacity:.9;margin-top:12px;font-size:14px}
+.band .bars{display:grid;gap:12px}
+.band .bar{font-size:13px;font-weight:700}
+.band .bar i{display:block;height:14px;border-radius:7px;background:rgba(255,255,255,.2);margin-top:6px;overflow:hidden}
+.band .bar i::after{content:"";display:block;height:100%;width:var(--w);background:#ffd08a;border-radius:7px}
+/* flow */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:800px){.flow{grid-template-columns:1fr}}
+.step{padding:30px 24px 26px;position:relative;text-align:center}
+.step .n{position:absolute;left:50%;top:-18px;transform:translateX(-50%);width:36px;height:36px;border-radius:50%;background:var(--orange);color:#fff;font-weight:900;display:grid;place-items:center;font-size:15px}
+.step .ic{font-size:42px;margin:6px 0 10px}
+.step h3{font-size:18px;font-weight:800;color:var(--navy)}
+.step .dur{display:inline-block;margin:6px 0 10px;background:var(--sky);color:var(--blue);font-size:12px;font-weight:800;padding:3px 10px;border-radius:6px}
+.step p{font-size:13px;color:var(--ink-2)}
+/* cases */
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.cases{grid-template-columns:1fr}}
+.case{padding:24px}
+.case .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.case h3{font-size:16px;font-weight:800;color:var(--navy);line-height:1.5}
+.case .ba{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;margin:14px 0;font-size:12px;text-align:center}
+.case .ba div{background:#f8fafc;border-radius:10px;padding:10px 6px}
+.case .ba b{display:block;font-size:20px;font-weight:900;color:var(--navy)}
+.case .ba .aft b{color:var(--orange)}
+.case p{font-size:13px;color:var(--ink-2)}
+/* contact */
+.contact{background:var(--sky-2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+.contact h2{font-size:clamp(24px,3.2vw,34px);font-weight:900;color:var(--navy);line-height:1.4}
+.contact .ex{margin-top:18px;display:grid;gap:10px}
+.contact .ex div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14px;font-weight:700;color:var(--navy);display:flex;gap:10px;align-items:center}
+.contact .ex div::before{content:"💬"}
+.contact .flow3{display:flex;gap:8px;align-items:center;margin-top:22px;font-size:12px;font-weight:700;color:var(--navy);flex-wrap:wrap}
+.contact .flow3 div{background:#fff;border-radius:12px;padding:12px 14px;text-align:center;border:1px solid var(--line);flex:1;min-width:110px}
+.contact .flow3 div i{display:block;font-size:26px;font-style:normal;margin-bottom:4px}
+.contact .flow3 span{color:var(--blue);font-size:18px}
+.contact-card{background:#fff;border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+.contact-card h3{color:var(--navy);font-size:18px;font-weight:800;margin-bottom:16px;text-align:center}
+.tel{margin-top:18px;text-align:center;font-size:13px;color:var(--ink-2)}
+.tel b{display:block;font-size:26px;color:var(--navy);font-weight:900;letter-spacing:.02em}
+.fixed-cta{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px;display:none;gap:10px}
+.fixed-cta .btn{flex:1;padding:12px}
+@media(max-width:900px){.fixed-cta{display:flex}body{padding-bottom:64px}}
+@media(max-width:900px){.hero-visual{height:260px}.hero-visual .stat{left:4%;top:auto;bottom:12px}.hero-visual .b{display:none}.hero-visual .a{width:100%;height:100%;right:0;top:0}}
+@media(max-width:600px){.trust .wrap{grid-template-columns:1fr;gap:12px}.trust b{display:inline;margin-right:6px}}
+</style>
+</head>
+<body>
+
+<div class="switch-bar">お仕事をお探しの方はこちら → <a href="../">観光・リゾートの求人サイト</a></div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="./"><span class="mark">観</span>観光HR<small>宿泊・観光に特化した総合人材サービス</small></a>
+    <nav class="nav" id="nav">
+      <a href="#problems">こんなお悩み</a>
+      <a href="#services">サービス</a>
+      <a href="#reasons">選ばれる理由</a>
+      <a href="#cases">導入事例</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline btn-sm hide-m" href="#contact">資料ダウンロード</a>
+      <a class="btn btn-primary btn-sm" href="#contact">30分ヒアリングを予約</a>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="rv in">
+      <div class="sub"><b>neocareer</b>観光HR（仮称）｜宿泊・観光に特化した総合人材サービス</div>
+      <h1>人手不足で、<br><em>売れる客室</em>を<br>あきらめない。</h1>
+      <p class="lead">繁忙期の応援から、正社員採用、外国人材、採用業務まで。<br><strong>施設ごとの人員課題を整理し、必要な方法を組み合わせて支援します。</strong></p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary btn-lg" href="#contact">まずは30分、人員状況を聞かせてください</a>
+        <a class="btn btn-outline btn-lg" href="#services">サービスを見る</a>
+      </div>
+    </div>
+    <div class="hero-visual rv in">
+      <img class="a" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=70" alt="ホテル客室">
+      <img class="b" src="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=600&q=70" alt="旅館の庭園">
+      <div class="stat"><b>72.2<span style="font-size:16px">%</span></b><small>宿泊施設が「人手不足」<br>観光庁 観光白書2026</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div><span class="ic">🏢</span><div><b>全国55拠点</b>地域に根ざした人材ネットワーク</div></div>
+    <div><span class="ic">🎧</span><div><b>自社コールセンター</b>5拠点・700席の集客基盤</div></div>
+    <div><span class="ic">🧩</span><div><b>6つの支援手段</b>派遣・紹介・広告・RPOをひとつの窓口で</div></div>
+    <div><span class="ic">📅</span><div><b>短期も長期も</b>繁忙期の応援から正社員採用まで</div></div>
+  </div>
+</div>
+
+<section class="sec" id="problems">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">Problem</span><h2>こんな悩み、ありませんか？</h2><p>採れない。足りない。採用に手が回らない。</p></div>
+    <div class="probs">
+      <div class="prob card rv"><div class="chk">✓</div><div class="ic">📅</div><b>繁忙期だけ足りない</b><small>必要な期間・人数だけ確保したい</small></div>
+      <div class="prob card rv"><div class="chk">✓</div><div class="ic">👨‍🍳</div><b>正社員が採れない</b><small>フロント・調理など必要な人材を採用したい</small></div>
+      <div class="prob card rv"><div class="chk">✓</div><div class="ic">👥</div><b>慢性的に人が足りない</b><small>派遣・外国人材も含めて安定させたい</small></div>
+      <div class="prob card rv"><div class="chk">✓</div><div class="ic">📢</div><b>募集しても応募が来ない</b><small>求人の出し方・媒体から見直したい</small></div>
+      <div class="prob card rv"><div class="chk">✓</div><div class="ic">💻</div><b>採用業務まで手が回らない</b><small>応募対応・面接調整も任せたい</small></div>
+    </div>
+    <div class="prob-note rv">求人、派遣、紹介を個別に手配するのではなく、<br><span>「いつ・どこに・何人足りないか」</span>から一緒に整理します。</div>
+  </div>
+</section>
+
+<section class="sec" id="services" style="background:var(--sky-2)">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">Solution</span><h2>わたしたちの解決</h2><p>人員課題に合わせて、採用手段を組み合わせます。</p></div>
+    <div class="sol-table">
+      <div class="sol card rv"><div class="need">繁忙期だけ<br>増員したい</div><div class="arrow">➜</div><div class="svc"><div class="num">1</div><span class="ic">🏠</span><div><b>住み込み・リゾート人材</b><span>寮つきで全国から短期・中期人材を確保。求職者向けサイトから直接集客。</span></div></div></div>
+      <div class="sol card rv"><div class="need">急な欠員を<br>埋めたい</div><div class="arrow">➜</div><div class="svc"><div class="num">2</div><span class="ic">👥</span><div><b>人材派遣</b><span>最短即日〜数日で必要な人材を派遣。繁忙期の週末だけ、といった柔軟な稼働にも対応。</span></div></div></div>
+      <div class="sol card rv"><div class="need">正社員を<br>採用したい</div><div class="arrow">➜</div><div class="svc"><div class="num">3</div><span class="ic">👔</span><div><b>人材紹介</b><span>フロント・調理・支配人など、正社員・専門人材を採用。成功報酬型で採用リスクを抑えます。</span></div></div></div>
+      <div class="sol card rv"><div class="need hot">応募をもっと<br>集めたい</div><div class="arrow">➜</div><div class="svc"><div class="num">4</div><span class="ic">📣</span><div><b>求人広告・募集改善</b><span>観光業に強い求人媒体・ノウハウで応募を獲得。求人票の書き方・写真・媒体選定から見直します。</span></div></div></div>
+      <div class="sol card rv"><div class="need">長期的に人員を<br>確保したい</div><div class="arrow">➜</div><div class="svc"><div class="num">5</div><span class="ic">🌏</span><div><b>外国人材の採用・定着支援</b><span>特定技能の活用から定着までワンストップ支援。在留手続き・生活サポートまで伴走します。</span></div></div></div>
+      <div class="sol card rv"><div class="need hot">採用する時間が<br>ない</div><div class="arrow">➜</div><div class="svc"><div class="num">6</div><span class="ic">📋</span><div><b>採用業務代行（RPO）</b><span>応募対応・面接調整など採用業務をまるごとサポート。自社コールセンターが応募者対応を代行。</span></div></div></div>
+    </div>
+    <div class="sol-note rv"><p>短期の「足りない」から、長期の「採れない」まで。</p><h3>施設ごとに必要な方法を選び、ひとつの窓口で支援。</h3></div>
+
+    <div class="combo rv">
+      <div><h3>たとえば、こんな組み合わせ。</h3><p>「派遣を売る」「求人広告を売る」ではなく、施設の状況から必要な方法を組み立てます。ひとつの手段で足りなければ、複数を重ねます。</p></div>
+      <div class="ex">
+        <div><b>CASE A｜温泉旅館（客室40室）</b>年末年始の10名不足 → ①住み込み人材 ＋ ②派遣で週末補強</div>
+        <div><b>CASE B｜リゾートホテル（客室120室）</b>調理長の退職 → ③人材紹介 ＋ ⑤特定技能で調理補助を通年確保</div>
+        <div><b>CASE C｜ビジネスホテル（3館運営）</b>採用担当が不在 → ④募集改善 ＋ ⑥RPOで応募対応を丸ごと代行</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="reasons">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">Reason</span><h2>選ばれる理由</h2><p>観光施設の人員課題を「手段」からではなく「課題」から考える。</p></div>
+    <div class="reasons">
+      <div class="reason card rv"><div class="num">01</div><div class="ic">🧩</div><h3>1つのサービスに縛られない</h3><p>「派遣を売る」「求人広告を売る」ではなく、施設の状況から必要な方法を組み立てます。6つの手段を横断できるのは、総合人材サービスだからこそ。</p></div>
+      <div class="reason card rv"><div class="num">02</div><div class="ic">🤝</div><h3>短期も、長期も相談できる</h3><p>繁忙期の増員から正社員・外国人材、採用業務そのものの支援まで。人員課題の変化に合わせて伴走します。シーズンが変わっても、窓口は同じ担当者。</p></div>
+      <div class="reason card rv"><div class="num">03</div><div class="ic">🏢</div><h3>ネオキャリアの全国基盤を活用</h3><p>全国55拠点・自社コールセンター5拠点700席。既存の人材事業の基盤を活かして、地方の施設でも集客と応募者対応を支援します。</p><div class="kpi"><div><b>55</b>拠点</div><div><b>700</b>席</div><div><b>5</b>コールセンター</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band">
+  <div class="wrap">
+    <div class="rv">
+      <div class="big">72.2<span style="font-size:.4em">%</span></div>
+      <h3>宿泊施設の72.2%が人手不足。<br>中でも中規模の旅館・ホテルが最も深刻。</h3>
+      <p>出典：観光庁「観光白書2026」。人が足りないから客室を閉める、予約を止める──その機会損失を、採用の組み合わせで取り戻します。</p>
+    </div>
+    <div class="bars rv">
+      <div class="bar">宿泊業全体<i style="--w:72.2%"></i></div>
+      <div class="bar">中規模旅館・ホテル（30〜99室）<i style="--w:81%"></i></div>
+      <div class="bar">大規模ホテル（100室以上）<i style="--w:68%"></i></div>
+      <div class="bar">小規模宿（〜29室）<i style="--w:64%"></i></div>
+      <p style="font-size:11px;opacity:.75">※規模別の数値はイメージです。実データに差し替えてください。</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="cases" style="background:var(--sky-2)">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">Case</span><h2>導入イメージ</h2><p>※サービス準備中のため、想定事例を掲載しています</p></div>
+    <div class="cases">
+      <div class="case card rv"><div class="tags"><span class="tag">温泉旅館</span><span class="tag">神奈川</span><span class="tag">①住み込み＋②派遣</span></div><h3>年末年始の10名不足を、全国からの住み込み人材で解消</h3><div class="ba"><div><small>稼働客室</small><b>28室</b></div><span>→</span><div class="aft"><small>稼働客室</small><b>40室</b></div></div><p>繁忙期のみ12室を閉めていた旅館。11月からの住み込み人材8名と週末の派遣で全室稼働に。</p></div>
+      <div class="case card rv"><div class="tags"><span class="tag">リゾートホテル</span><span class="tag">沖縄</span><span class="tag">③紹介＋⑤外国人材</span></div><h3>調理長の退職と慢性的な調理補助不足を同時に解決</h3><div class="ba"><div><small>採用期間</small><b>6ヶ月</b></div><span>→</span><div class="aft"><small>採用期間</small><b>6週間</b></div></div><p>人材紹介で調理長を採用しつつ、特定技能の外国人材2名を通年で配置。定着支援も継続中。</p></div>
+      <div class="case card rv"><div class="tags"><span class="tag">ビジネスホテル</span><span class="tag">3館運営</span><span class="tag">④募集改善＋⑥RPO</span></div><h3>採用担当ゼロの運営会社が、月30件の応募を安定獲得</h3><div class="ba"><div><small>月間応募</small><b>4件</b></div><span>→</span><div class="aft"><small>月間応募</small><b>30件</b></div></div><p>求人票と媒体を見直し、応募対応・面接調整はコールセンターが代行。支配人の採用業務がゼロに。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">Flow</span><h2>ご相談から支援開始まで</h2><p>「◯月に10人足りない」「調理スタッフだけ採れない」そんな1つの課題からで構いません。</p></div>
+    <div class="flow">
+      <div class="step card rv"><div class="n">1</div><div class="ic">🎧</div><h3>30分の人員課題ヒアリング</h3><div class="dur">オンライン or 訪問</div><p>いつ・どこに・何人足りないか。現在の採用手段と、うまくいっていないことを伺います。</p></div>
+      <div class="step card rv"><div class="n">2</div><div class="ic">📋</div><h3>課題整理</h3><div class="dur">3営業日以内</div><p>短期・長期、職種ごとに課題を分解。優先順位と、それぞれに有効な手段を整理してお戻しします。</p></div>
+      <div class="step card rv"><div class="n">3</div><div class="ic">💡</div><h3>支援方法をご提案</h3><div class="dur">お見積り込み</div><p>必要な手段の組み合わせと費用感をご提案。合意後、最短で翌週から支援を開始します。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" style="background:var(--sky-2)">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">FAQ</span><h2>よくあるご質問</h2></div>
+    <div class="faq rv">
+      <details open><summary>費用はどのくらいかかりますか？</summary><div class="a">手段によって料金体系が異なります。人材派遣は時間単価、人材紹介は成功報酬（理論年収の一定割合）、求人広告・RPOは月額制が基本です。ヒアリングの上、組み合わせに応じたお見積りをご提示します。ヒアリング・課題整理は無料です。</div></details>
+      <details><summary>1つの手段だけ依頼することはできますか？</summary><div class="a">もちろん可能です。「繁忙期の派遣だけ」「求人票の改善だけ」といったご依頼もお受けしています。状況が変わったときに、他の手段を追加できるのが観光HRの強みです。</div></details>
+      <details><summary>地方の施設でも対応できますか？</summary><div class="a">はい。全国55拠点のネットワークと、求職者向けの住み込み求人サイトを通じて、全国から人材を集めます。特に温泉地・スキー場・離島などの観光地は得意領域です。</div></details>
+      <details><summary>外国人材の受け入れが初めてでも大丈夫ですか？</summary><div class="a">特定技能制度の説明、在留資格の手続き、受け入れ体制づくり、入社後の生活サポートまで一貫して支援します。初めて受け入れる施設さまが大半です。</div></details>
+      <details><summary>どのくらいの期間で人が来ますか？</summary><div class="a">人材派遣は最短即日〜数日、住み込み人材は2〜4週間、人材紹介は職種によって1〜3ヶ月が目安です。繁忙期はお早めのご相談をおすすめします。</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <span class="en" style="font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--blue)">CONTACT</span>
+      <h2>まずは30分、<br>人員状況を聞かせてください。</h2>
+      <p style="color:var(--ink-2);margin-top:12px">「◯月に10人足りない」「調理スタッフだけ採れない」<br>そんな1つの課題からで構いません。</p>
+      <div class="ex"><div>年末年始だけ、配膳スタッフが8人足りない</div><div>支配人候補を採用したいが、応募が来ない</div><div>採用担当がいないので、応募対応を任せたい</div></div>
+      <div class="flow3"><div><i>🎧</i>30分の<br>人員課題ヒアリング</div><span>➜</span><div><i>📋</i>課題整理</div><span>➜</span><div><i>💡</i>支援方法を<br>ご提案</div></div>
+      <div class="tel">お電話でのご相談<b>03-XXXX-XXXX</b>平日 9:30〜18:30（株式会社ネオキャリア 観光HR担当）</div>
+    </div>
+    <div class="contact-card rv">
+      <form id="ctForm">
+        <h3>30分ヒアリングのお申し込み</h3>
+        <div class="form-grid">
+          <label class="field"><span>施設名・会社名<span class="req">必須</span></span><input required placeholder="◯◯温泉旅館"></label>
+          <label class="field"><span>ご担当者名<span class="req">必須</span></span><input required placeholder="山田 太郎"></label>
+          <label class="field"><span>メールアドレス<span class="req">必須</span></span><input type="email" required placeholder="example@hotel.jp"></label>
+          <label class="field"><span>電話番号<span class="req">必須</span></span><input type="tel" required placeholder="03-0000-0000"></label>
+          <label class="field"><span>施設の種類</span><select><option>旅館</option><option>リゾートホテル</option><option>シティ・ビジネスホテル</option><option>スキー場・レジャー施設</option><option>飲食・観光施設</option><option>その他</option></select></label>
+          <label class="field"><span>客室数・規模</span><select><option>〜29室</option><option>30〜99室</option><option>100室以上</option><option>複数施設を運営</option></select></label>
+          <label class="field full"><span>いま困っていること<span class="req">必須</span></span><textarea rows="3" required placeholder="例）12月〜2月に配膳スタッフが6名足りない。求人を出しているが応募がない。"></textarea></label>
+          <label class="field full"><span>ご希望の相談方法</span><select><option>オンライン（30分）</option><option>訪問</option><option>電話</option><option>まずは資料がほしい</option></select></label>
+        </div>
+        <p style="font-size:11px;color:var(--ink-2);margin:14px 0">送信により<a href="#" style="text-decoration:underline">プライバシーポリシー</a>に同意したものとみなします。</p>
+        <button class="btn btn-primary btn-lg" style="width:100%" type="submit">ヒアリングを申し込む（無料）</button>
+      </form>
+      <div class="thanks" id="thanks">お申し込みありがとうございます。<small>担当者より1営業日以内にご連絡します。<br>※このページはデモです。実際の送信は行われていません。</small></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><a class="logo" href="./"><span class="mark">観</span>観光HR</a><p style="margin-top:12px;line-height:1.8">宿泊・観光に特化した総合人材サービス<br>運営：株式会社ネオキャリア<br>〒163-0415 東京都新宿区西新宿2-1-1 新宿三井ビルディング</p></div>
+      <div><h4>サービス</h4><ul><li><a href="#services">住み込み・リゾート人材</a></li><li><a href="#services">人材派遣</a></li><li><a href="#services">人材紹介</a></li><li><a href="#services">求人広告・募集改善</a></li><li><a href="#services">外国人材の採用・定着支援</a></li><li><a href="#services">採用業務代行（RPO）</a></li></ul></div>
+      <div><h4>観光HRについて</h4><ul><li><a href="#reasons">選ばれる理由</a></li><li><a href="#cases">導入イメージ</a></li><li><a href="#faq">よくあるご質問</a></li><li><a href="#contact">お問い合わせ</a></li></ul></div>
+      <div><h4>関連サイト</h4><ul><li><a href="../">求職者向け求人サイト</a></li><li><a href="https://www.neo-career.co.jp/" target="_blank" rel="noopener">株式会社ネオキャリア</a></li><li><a href="#">プライバシーポリシー</a></li><li><a href="#">労働者派遣事業許可番号</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 neo career Co., Ltd.</span><span>※本ページはサービス企画段階のデモページです。数値・事例は一部想定値を含みます。</span></div>
+  </div>
+</footer>
+
+<div class="fixed-cta"><a class="btn btn-outline" href="#services">サービスを見る</a><a class="btn btn-primary" href="#contact">30分ヒアリング予約</a></div>
+
+<script>
+document.getElementById("menuBtn").onclick=()=>document.getElementById("nav").classList.toggle("open");
+document.getElementById("nav").addEventListener("click",()=>document.getElementById("nav").classList.remove("open"));
+document.getElementById("ctForm").addEventListener("submit",e=>{e.preventDefault();e.target.style.display="none";document.getElementById("thanks").style.display="block";});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

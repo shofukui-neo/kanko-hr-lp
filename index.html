@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>観光HR｜住み込み・リゾート・観光業の求人サイト</title>
+<meta name="description" content="温泉旅館・リゾートホテル・スキー場・テーマパークなど、全国の観光業の求人を掲載。寮完備・短期OK・未経験歓迎。登録から最短3日でお仕事決定。">
+<meta property="og:title" content="観光HR｜住み込み・リゾート・観光業の求人サイト">
+<meta property="og:description" content="働く場所を、旅にする。全国の温泉・リゾート・観光地の求人を寮付きで。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d6fe0'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3E観%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/common.css">
+<style>
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#0f3d8a 0%,#1d6fe0 60%,#3b8cf5 100%);color:#fff;padding:64px 0 120px}
+.hero::before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1542640244-7e672d6cef4e?auto=format&fit=crop&w=1800&q=70") center/cover;opacity:.32;mix-blend-mode:luminosity}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:90px;background:#fff;clip-path:ellipse(60% 100% at 50% 100%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero{padding:40px 0 100px}}
+@media(max-width:520px){.hero .kicker{font-size:11px;white-space:normal;line-height:1.5}.hero-stats{gap:10px}.hero-stats div{flex:1 1 auto;padding:8px 12px}.hero-stats b{font-size:20px}}
+.hero .kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.08em}
+.hero h1{font-size:clamp(34px,5.4vw,62px);font-weight:900;line-height:1.2;margin:18px 0 14px;letter-spacing:-.01em;text-shadow:0 4px 24px rgba(0,0,0,.2)}
+.hero h1 em{font-style:normal;color:#ffd08a}
+.hero .lead{font-size:clamp(15px,1.6vw,18px);opacity:.95;max-width:520px}
+.hero-stats{display:flex;gap:22px;margin-top:26px;flex-wrap:wrap}
+.hero-stats div{background:rgba(255,255,255,.14);backdrop-filter:blur(6px);border-radius:12px;padding:10px 16px;border:1px solid rgba(255,255,255,.25)}
+.hero-stats b{font-size:26px;font-weight:900;display:block;line-height:1.1}
+.hero-stats small{font-size:12px;opacity:.9}
+.hero-photos{position:relative;height:420px}
+@media(max-width:900px){.hero-photos{display:none}}
+.hero-photos img{position:absolute;border-radius:20px;object-fit:cover;box-shadow:0 20px 50px rgba(0,0,0,.35);background:#7fb0f5}
+.hero-photos .p1{width:62%;height:64%;left:0;top:0;transform:rotate(-3deg)}
+.hero-photos .p2{width:48%;height:52%;right:0;top:20%;transform:rotate(4deg)}
+.hero-photos .p3{width:42%;height:40%;left:14%;bottom:0;transform:rotate(2deg)}
+.hero-photos .bubble{position:absolute;background:#fff;color:var(--navy);border-radius:14px;padding:10px 14px;font-weight:700;font-size:13px;box-shadow:var(--shadow)}
+.hero-photos .b1{left:52%;top:-4px}.hero-photos .b2{left:-6px;bottom:22%}
+/* search */
+.search{position:relative;z-index:2;margin-top:-84px}
+.search-box{background:#fff;border-radius:22px;box-shadow:var(--shadow);padding:24px}
+.search-row{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:12px}
+@media(max-width:800px){.search-row{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.search-row{grid-template-columns:1fr}}
+.sf{display:flex;flex-direction:column;gap:6px}
+.sf label{font-size:12px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:6px}
+.sf select{font:inherit;padding:13px 40px 13px 14px;border:1px solid #cfd8e6;border-radius:12px;background:#f8fafc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230b2a5b' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat right 14px center;appearance:none;color:var(--ink)}
+.search-row .btn{align-self:end;height:50px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;align-items:center}
+.chips span{font-size:12px;color:var(--ink-2);font-weight:700;margin-right:4px}
+.chip{padding:7px 13px;border-radius:999px;background:var(--sky);color:var(--navy);font-size:12px;font-weight:700;transition:.15s}
+.chip:hover{background:var(--blue);color:#fff}
+/* job rows */
+.jobs-sec{padding:64px 0 24px}
+.row-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:18px;gap:12px}
+.row-head h2{font-size:clamp(19px,2.4vw,24px);font-weight:800;color:var(--navy);display:flex;align-items:center;gap:10px}
+.row-head h2 i{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-style:normal;font-size:17px;background:var(--sky)}
+.row-head a{font-size:13px;font-weight:700;color:var(--blue)}
+.scroller{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 6px 22px;margin:0 -6px;scrollbar-width:thin}
+.job{flex:0 0 290px;scroll-snap-align:start;background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line);transition:transform .2s,box-shadow .2s;position:relative}
+.job:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.job .ph{height:160px;background:linear-gradient(135deg,#8fbcf7,#1d6fe0);position:relative}
+.job .ph img{width:100%;height:100%;object-fit:cover}
+.job .badge{position:absolute;left:10px;top:10px;background:var(--orange);color:#fff;font-size:11px;font-weight:800;padding:4px 9px;border-radius:6px}
+.job .fav{position:absolute;right:10px;top:10px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;font-size:15px;color:#c8ced8}
+.job .fav.on{color:#ff4d6d}
+.job .body{padding:14px 16px 16px}
+.job .loc{font-size:12px;color:var(--blue);font-weight:700}
+.job h3{font-size:15px;font-weight:800;line-height:1.45;margin:4px 0 8px;color:var(--navy);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.job .meta{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--ink-2)}
+.job .wage{display:flex;align-items:baseline;gap:4px;margin-top:10px}
+.job .wage b{font-size:22px;color:var(--orange);font-weight:900}
+.job .wage small{font-size:12px;color:var(--ink-2)}
+.job .perks{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}
+.job .perks span{font-size:11px;padding:3px 8px;border-radius:5px;background:#f1f5f9;color:var(--ink-2);font-weight:600}
+.job .rate{display:flex;align-items:center;gap:6px;font-size:12px;margin-top:10px;color:var(--ink-2)}
+.job .rate b{color:#f5a623;letter-spacing:-1px}
+/* campaign */
+.camps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:900px){.camps{grid-template-columns:repeat(2,1fr)}}
+.camp{border-radius:16px;padding:22px 18px;color:#fff;min-height:140px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.camp small{font-size:11px;font-weight:700;opacity:.9;letter-spacing:.1em}
+.camp b{font-size:18px;font-weight:900;line-height:1.35;margin-top:4px}
+.camp .ico{position:absolute;right:12px;top:10px;font-size:44px;opacity:.35}
+/* areas */
+.areas{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:900px){.areas{grid-template-columns:repeat(2,1fr)}}
+.area{position:relative;height:150px;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#0b2a5b,#1d6fe0)}
+.area img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.area:hover img{transform:scale(1.06)}
+.area div{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 60%);color:#fff;padding:14px;display:flex;flex-direction:column;justify-content:flex-end}
+.area b{font-size:18px;font-weight:900}
+.area small{font-size:12px;opacity:.9}
+.jobtypes{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.jobtypes a{padding:10px 16px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:700;background:#fff;color:var(--navy)}
+.jobtypes a:hover{border-color:var(--blue);color:var(--blue)}
+/* features */
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:900px){.features{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.features{grid-template-columns:1fr}}
+.feat{padding:28px 22px;text-align:center}
+.feat .ic{width:68px;height:68px;border-radius:20px;background:var(--sky);display:grid;place-items:center;font-size:30px;margin:0 auto 14px}
+.feat .num{font-size:11px;font-weight:800;color:var(--blue);letter-spacing:.2em}
+.feat h3{font-size:17px;font-weight:800;color:var(--navy);margin:4px 0 8px}
+.feat p{font-size:13px;color:var(--ink-2)}
+/* flow */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
+@media(max-width:800px){.flow{grid-template-columns:1fr}}
+.step{padding:30px 24px 26px;position:relative;text-align:center}
+.step .n{position:absolute;left:50%;top:-18px;transform:translateX(-50%);width:36px;height:36px;border-radius:50%;background:var(--orange);color:#fff;font-weight:900;display:grid;place-items:center;font-size:15px;box-shadow:var(--shadow-sm)}
+.step .ic{font-size:42px;margin:6px 0 10px}
+.step h3{font-size:18px;font-weight:800;color:var(--navy)}
+.step .dur{display:inline-block;margin:6px 0 10px;background:var(--sky);color:var(--blue);font-size:12px;font-weight:800;padding:3px 10px;border-radius:6px}
+.step p{font-size:13px;color:var(--ink-2)}
+/* about */
+.about{background:linear-gradient(180deg,var(--sky-2),#fff)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+@media(max-width:800px){.about-grid{grid-template-columns:1fr}}
+.about-grid h2{font-size:clamp(22px,3vw,30px);font-weight:900;color:var(--navy);line-height:1.4}
+.about-grid p{margin-top:14px;color:var(--ink-2)}
+.merits{display:grid;gap:12px;margin-top:20px}
+.merit{display:flex;gap:14px;align-items:flex-start;padding:14px 16px}
+.merit .ic{font-size:24px;flex:0 0 auto}
+.merit b{display:block;color:var(--navy);font-size:15px}
+.merit span{font-size:13px;color:var(--ink-2)}
+.about-img{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(135deg,#8fbcf7,#1d6fe0);aspect-ratio:4/3}
+.about-img img{width:100%;height:100%;object-fit:cover}
+/* voices */
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.voices{grid-template-columns:1fr}}
+.voice{overflow:hidden}
+.voice .ph{height:170px;background:linear-gradient(135deg,#ffd08a,#ff7a1a)}
+.voice .ph img{width:100%;height:100%;object-fit:cover}
+.voice .body{padding:18px}
+.voice .tags{display:flex;gap:6px;margin-bottom:8px}
+.voice h3{font-size:15px;font-weight:800;color:var(--navy);line-height:1.5}
+.voice p{font-size:13px;color:var(--ink-2);margin-top:8px}
+.voice .who{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:12px;color:var(--ink-2)}
+.voice .who i{width:34px;height:34px;border-radius:50%;background:var(--sky);display:grid;place-items:center;font-style:normal;font-size:16px}
+/* gap zero */
+.pledge{background:var(--navy);color:#fff;border-radius:24px;padding:44px 32px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center}
+@media(max-width:800px){.pledge{grid-template-columns:1fr;text-align:center}}
+.pledge .big{font-size:52px;font-weight:900;line-height:1;color:#ffd08a}
+.pledge h3{font-size:22px;font-weight:900}
+.pledge p{opacity:.9;font-size:14px;margin-top:6px}
+/* register */
+.register{background:linear-gradient(135deg,#0f3d8a,#1d6fe0);color:#fff}
+.reg-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center}
+@media(max-width:900px){.reg-grid{grid-template-columns:1fr}}
+.reg-grid h2{font-size:clamp(24px,3.4vw,36px);font-weight:900;line-height:1.35}
+.reg-grid .pts{margin-top:18px;display:grid;gap:10px}
+.reg-grid .pts li{display:flex;gap:10px;align-items:center;font-weight:700}
+.reg-grid .pts li::before{content:"✓";width:24px;height:24px;border-radius:50%;background:#ffd08a;color:var(--navy);display:grid;place-items:center;font-size:13px;flex:0 0 auto}
+.reg-card{background:#fff;color:var(--ink);border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+.reg-card h3{color:var(--navy);font-size:18px;font-weight:800;margin-bottom:16px;text-align:center}
+.reg-card .or{text-align:center;font-size:12px;color:var(--ink-2);margin:14px 0}
+/* app */
+.appdl{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+@media(max-width:800px){.appdl{grid-template-columns:1fr;text-align:center}}
+.appdl h2{font-size:clamp(20px,2.6vw,28px);font-weight:900;color:var(--navy)}
+.appdl .stores{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+@media(max-width:800px){.appdl .stores{justify-content:center}}
+.store{display:inline-flex;align-items:center;gap:8px;background:#111;color:#fff;padding:10px 18px;border-radius:10px;font-size:13px;font-weight:700}
+.phone{width:220px;height:440px;border-radius:36px;background:#111;margin-inline:auto;padding:12px;box-shadow:var(--shadow)}
+.phone div{height:100%;border-radius:26px;background:linear-gradient(180deg,#1d6fe0,#e8f1fd 45%,#fff);position:relative;overflow:hidden}
+.phone div::after{content:"観光HR";position:absolute;top:24px;left:0;right:0;text-align:center;color:#fff;font-weight:900;font-size:18px}
+/* fixed cta */
+.fixed-cta{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px;display:none;gap:10px}
+.fixed-cta .btn{flex:1;padding:12px}
+@media(max-width:900px){.fixed-cta{display:flex}body{padding-bottom:64px}}
+</style>
+</head>
+<body>
+
+<div class="switch-bar">企業・施設のご担当者さまはこちら → <a href="business/">観光施設向け 人材サービス「観光HR」</a></div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="./"><span class="mark">観</span>観光HR<small>住み込み・リゾート・観光の求人</small></a>
+    <nav class="nav" id="nav">
+      <a href="#jobs">求人を探す</a>
+      <a href="#areas">エリアから探す</a>
+      <a href="#voices">体験談</a>
+      <a href="#faq">よくある質問</a>
+      <a href="business/">企業の方はこちら</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline btn-sm hide-m" href="#register">ログイン</a>
+      <a class="btn btn-primary btn-sm" href="#register">無料で登録</a>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker">🏨 寮完備 ｜ 🎿 短期OK ｜ 🌏 未経験歓迎</span>
+      <h1>働く場所を、<br><em>旅</em>にする。</h1>
+      <p class="lead">温泉旅館、リゾートホテル、スキー場、テーマパーク。全国の観光地で「住み込み」で働ける求人を、専任スタッフが一緒に探します。寮費・食費がかからないから、貯金もできる。</p>
+      <div class="hero-stats">
+        <div><b id="jobCount">1,284</b><small>掲載求人数（9月4日時点）</small></div>
+        <div><b>3日</b><small>登録から決定まで最短</small></div>
+        <div><b>4.6<span style="font-size:14px">/5</span></b><small>登録者満足度</small></div>
+      </div>
+      <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-primary btn-lg" href="#register">無料で会員登録する</a>
+        <a class="btn btn-lg" style="background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.5)" href="#jobs">求人を見てみる</a>
+      </div>
+    </div>
+    <div class="hero-photos">
+      <img class="p1" src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=70" alt="リゾートホテルのプール">
+      <img class="p2" src="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=600&q=70" alt="温泉旅館">
+      <img class="p3" src="https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=600&q=70" alt="スキー場">
+      <div class="bubble b1">🏔 白馬・ニセコ 冬の募集開始！</div>
+      <div class="bubble b2">🍽 寮費・食費 無料の求人 多数</div>
+    </div>
+  </div>
+</section>
+
+<section class="search" id="jobs">
+  <div class="wrap">
+    <div class="search-box">
+      <div class="search-row">
+        <div class="sf"><label>📅 いつから</label>
+          <select id="qWhen"><option>いつでも</option><option>すぐに働きたい</option><option>10月スタート</option><option>11月スタート</option><option>12月スタート（冬）</option><option>年末年始だけ</option></select></div>
+        <div class="sf"><label>📍 どこで</label>
+          <select id="qWhere"><option>全国</option><option>北海道</option><option>東北</option><option>関東</option><option>甲信越・北陸</option><option>東海</option><option>関西</option><option>中国・四国</option><option>九州・沖縄</option></select></div>
+        <div class="sf"><label>💼 どんな仕事</label>
+          <select id="qType"><option>すべての職種</option><option>ホテル・旅館フロント</option><option>レストラン・配膳</option><option>調理・キッチン</option><option>客室清掃</option><option>スキー場・リフト</option><option>テーマパーク</option><option>売店・販売</option><option>ナイトフロント</option></select></div>
+        <button class="btn btn-blue" id="searchBtn">🔍 検索する</button>
+      </div>
+      <div class="chips"><span>人気の条件</span>
+        <a class="chip" href="#immediate">短期・1ヶ月</a><a class="chip" href="#highpay">高時給</a><a class="chip" href="#jobs">個室寮</a><a class="chip" href="#jobs">友達と一緒</a><a class="chip" href="#jobs">カップル歓迎</a><a class="chip" href="#jobs">温泉入り放題</a><a class="chip" href="#jobs">スキー・スノボ無料</a><a class="chip" href="#jobs">外国語を活かす</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="jobs-sec">
+  <div class="wrap">
+    <div id="immediate">
+      <div class="row-head"><h2><i>⚡</i>すぐに働ける求人</h2><a href="#register">すべて見る →</a></div>
+      <div class="scroller" data-row="soon"></div>
+    </div>
+    <div id="highpay" style="margin-top:22px">
+      <div class="row-head"><h2><i>💰</i>高時給の求人</h2><a href="#register">すべて見る →</a></div>
+      <div class="scroller" data-row="high"></div>
+    </div>
+    <div style="margin-top:22px">
+      <div class="row-head"><h2><i>🆕</i>新着の求人</h2><a href="#register">すべて見る →</a></div>
+      <div class="scroller" data-row="new"></div>
+    </div>
+    <p style="text-align:center;margin-top:8px"><a class="btn btn-blue btn-lg" href="#register">条件を指定して求人を探す</a></p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:40px">
+  <div class="wrap">
+    <div class="camps">
+      <a class="camp rv" href="#register" style="background:linear-gradient(135deg,#0ea5e9,#0b2a5b)"><span class="ico">🏔</span><small>WINTER CAMPAIGN</small><b>北海道・長野の冬スキー場<br>最大3万円の着任ボーナス</b></a>
+      <a class="camp rv" href="#register" style="background:linear-gradient(135deg,#ff7a1a,#ff4d6d)"><span class="ico">👯</span><small>FRIEND REFERRAL</small><b>友達紹介で<br>2人とも1万円プレゼント</b></a>
+      <a class="camp rv" href="#register" style="background:linear-gradient(135deg,#06c755,#0b8a3e)"><span class="ico">🎓</span><small>EXPERIENCED</small><b>リゾバ経験者は<br>時給+50円で優遇</b></a>
+      <a class="camp rv" href="#register" style="background:linear-gradient(135deg,#7c3aed,#1d6fe0)"><span class="ico">🌏</span><small>FREE LESSON</small><b>登録者限定<br>オンライン英会話が無料</b></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="areas" style="background:var(--sky-2)">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">Area</span><h2>勤務地から探す</h2><p>「行ってみたかった場所」で働く。人気エリアはこちら</p></div>
+    <div class="areas">
+      <a class="area rv" href="#register"><img src="https://images.unsplash.com/photo-1548783307-f63adc3f200b?auto=format&fit=crop&w=600&q=60" alt="ニセコ"><div><b>ニセコ・北海道</b><small>パウダースノー ｜ 142件</small></div></a>
+      <a class="area rv" href="#register"><img src="https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=600&q=60" alt="白馬"><div><b>白馬・長野</b><small>スキー場・温泉 ｜ 118件</small></div></a>
+      <a class="area rv" href="#register"><img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=600&q=60" alt="箱根"><div><b>箱根・伊豆</b><small>温泉旅館 ｜ 205件</small></div></a>
+      <a class="area rv" href="#register"><img src="https://images.unsplash.com/photo-1542640244-7e672d6cef4e?auto=format&fit=crop&w=600&q=60" alt="沖縄"><div><b>沖縄・離島</b><small>リゾートホテル ｜ 167件</small></div></a>
+      <a class="area rv" href="#register"><img src="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=600&q=60" alt="草津"><div><b>草津・軽井沢</b><small>温泉・高原 ｜ 96件</small></div></a>
+      <a class="area rv" href="#register"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=60" alt="京都"><div><b>京都・奈良</b><small>老舗旅館 ｜ 88件</small></div></a>
+      <a class="area rv" href="#register"><img src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=600&q=60" alt="石垣島"><div><b>石垣・宮古島</b><small>ダイビング ｜ 74件</small></div></a>
+      <a class="area rv" href="#register"><img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?auto=format&fit=crop&w=600&q=60" alt="東京"><div><b>東京・千葉</b><small>テーマパーク・ホテル ｜ 131件</small></div></a>
+    </div>
+    <div class="jobtypes rv">
+      <a href="#register">🛎 ホテル・旅館フロント</a><a href="#register">🍽 レストラン・配膳</a><a href="#register">👨‍🍳 調理・キッチン</a><a href="#register">🧹 客室清掃</a><a href="#register">🎿 スキー場・リフト</a><a href="#register">🎡 テーマパーク</a><a href="#register">🛍 売店・販売</a><a href="#register">🌙 ナイトフロント</a><a href="#register">🏌️ ゴルフ場</a><a href="#register">🤿 マリンスタッフ</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">Feature</span><h2>観光HRが選ばれる4つの理由</h2><p>「求人票と現場が違う」をなくすために、私たちができること</p></div>
+    <div class="features">
+      <div class="feat card rv"><div class="ic">🔒</div><div class="num">01</div><h3>ここだけの非公開求人</h3><p>全国55拠点のネットワークで集めた、他サイトに出ない旅館・ホテルの求人。条件のこだわり検索も充実。</p></div>
+      <div class="feat card rv"><div class="ic">💬</div><div class="num">02</div><h3>働いた人のリアルな口コミ</h3><p>寮の写真、まかないの味、休日の過ごし方まで。実際に働いた人の声を、良いことも悪いこともそのまま掲載。</p></div>
+      <div class="feat card rv"><div class="ic">🧑‍💼</div><div class="num">03</div><h3>専任スタッフが伴走</h3><p>登録後は一人の担当者がずっと担当。仕事選びから現地でのトラブルまで、LINEで気軽に相談できます。</p></div>
+      <div class="feat card rv"><div class="ic">🎁</div><div class="num">04</div><h3>給与前払い・各種特典</h3><p>働いた分は最短で翌週受け取りOK。往復交通費支給、温泉入り放題、リフト券無料など特典付き求人も多数。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--sky-2)">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">Flow</span><h2>登録から、最短3日でお仕事決定</h2><p>履歴書不要。スマホだけで完結します</p></div>
+    <div class="flow">
+      <div class="step card rv"><div class="n">1</div><div class="ic">📱</div><h3>無料の会員登録</h3><div class="dur">約1分</div><p>名前・連絡先・希望の時期を入力するだけ。LINEからの登録もOK。履歴書はいりません。</p></div>
+      <div class="step card rv"><div class="n">2</div><div class="ic">☎️</div><h3>初回カウンセリング</h3><div class="dur">電話 or LINE 15分</div><p>「いつから・どこで・どのくらい稼ぎたいか」を担当者がヒアリング。あなたに合う求人を厳選して提案します。</p></div>
+      <div class="step card rv"><div class="n">3</div><div class="ic">🎉</div><h3>お仕事決定・出発</h3><div class="dur">最短3日</div><p>条件が合えば施設と調整して決定。交通手段や持ち物、寮の情報まで出発前に丁寧にご案内します。</p></div>
+    </div>
+    <p style="text-align:center;margin-top:36px"><a class="btn btn-primary btn-lg" href="#register">まずは無料で登録する</a></p>
+  </div>
+</section>
+
+<section class="sec about">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <span class="en" style="font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--blue)">ABOUT</span>
+      <h2>「住み込みで観光地で働く」って、<br>どんな暮らし？</h2>
+      <p>観光地の旅館やホテル、スキー場などで、寮に住みながら一定期間働くスタイル。寮費・食費が無料〜格安の求人が多いので、給与のほとんどが手元に残ります。1ヶ月の短期から、正社員登用のある長期まで、期間も選べます。</p>
+      <div class="merits">
+        <div class="merit card"><span class="ic">💴</span><div><b>貯金がしやすい</b><span>寮費・食費・光熱費が無料の求人が約7割。3ヶ月で50万円以上貯めた人も。</span></div></div>
+        <div class="merit card"><span class="ic">🧳</span><div><b>旅をしながら働ける</b><span>休みの日は観光地がそのまま遊び場。夏は沖縄、冬は北海道、という働き方も。</span></div></div>
+        <div class="merit card"><span class="ic">🤝</span><div><b>全国に仲間ができる</b><span>同じ時期に集まった仲間と過ごす寮生活。年齢も出身もバラバラだから面白い。</span></div></div>
+      </div>
+    </div>
+    <div class="about-img rv"><img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=900&q=70" alt="旅館で働くスタッフ"></div>
+  </div>
+</section>
+
+<section class="sec" id="voices">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">Voice</span><h2>先輩たちの体験談</h2><p>実際に観光HRで働いた人のリアルな声</p></div>
+    <div class="voices">
+      <article class="voice card rv"><div class="ph"><img src="https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=600&q=60" alt=""></div><div class="body"><div class="tags"><span class="tag">白馬</span><span class="tag">スキー場</span><span class="tag">3ヶ月</span></div><h3>滑りたくて来たら、貯金が45万円できてた話</h3><p>リフト券無料で毎日滑れる上に寮費・食費ゼロ。気づいたら貯金が増えていて、春から海外に行けました。</p><div class="who"><i>🧑</i>ゆうき さん（23歳・大学生）</div></div></article>
+      <article class="voice card rv"><div class="ph"><img src="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=600&q=60" alt=""></div><div class="body"><div class="tags"><span class="tag">箱根</span><span class="tag">旅館仲居</span><span class="tag">6ヶ月</span></div><h3>未経験の私が、老舗旅館で「おもてなし」を学んだ半年</h3><p>着物の着付けから接客まで丁寧に教えてもらえました。今は正社員として同じ旅館で働いています。</p><div class="who"><i>👩</i>あかり さん（27歳・元アパレル）</div></div></article>
+      <article class="voice card rv"><div class="ph"><img src="https://images.unsplash.com/photo-1542640244-7e672d6cef4e?auto=format&fit=crop&w=600&q=60" alt=""></div><div class="body"><div class="tags"><span class="tag">石垣島</span><span class="tag">ホテルフロント</span><span class="tag">1年</span></div><h3>英語を使いたくて沖縄へ。外国人ゲストが7割のホテルでした</h3><p>担当の方が「英語を活かせる求人」だけを厳選してくれたのが決め手。海外の友達もたくさんできました。</p><div class="who"><i>🧑‍🦱</i>たくみ さん（31歳・元営業）</div></div></article>
+    </div>
+    <p style="text-align:center;margin-top:28px"><a class="btn btn-outline" href="#register">体験談をもっと見る</a></p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="pledge rv">
+      <div class="big">GAP<br>ZERO</div>
+      <div><h3>求人ギャップ0宣言</h3><p>「聞いていた話と違う」をなくします。寮の写真・シフト実績・実際の残業時間を、担当者が事前に施設へ確認してからご案内。もし現地で条件が違ったら、すぐに担当者へ。私たちが施設と交渉します。</p></div>
+      <a class="btn btn-primary" href="#register">詳しく見る</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="en">FAQ</span><h2>よくある質問</h2></div>
+    <div class="faq rv">
+      <details open><summary>未経験でも働けますか？</summary><div class="a">はい。掲載求人の約8割が未経験歓迎です。接客が初めての方も、施設側の研修があるので安心してスタートできます。</div></details>
+      <details><summary>いつから働けますか？</summary><div class="a">最短で登録から3日後に出発した方もいます。「◯月から」「年末年始だけ」など、ご希望の時期に合わせて求人をご案内します。</div></details>
+      <details><summary>寮費や食費はかかりますか？</summary><div class="a">求人によりますが、寮費・食費・光熱費すべて無料の求人が約7割です。個室・Wi-Fi付きなど、寮の条件も検索できます。</div></details>
+      <details><summary>どんな仕事がありますか？</summary><div class="a">ホテル・旅館のフロント、レストランの配膳、調理補助、客室清掃、スキー場のリフト係、テーマパークのスタッフ、売店・販売など。体を動かす仕事から、外国語を活かす仕事まで幅広くあります。</div></details>
+      <details><summary>雇用形態はどうなりますか？</summary><div class="a">多くは観光HR（株式会社ネオキャリア）との派遣契約です。給与は当社からお支払いし、社会保険・雇用保険も条件に応じて加入できます。施設への直接雇用（正社員・契約社員）の紹介も可能です。</div></details>
+      <details><summary>友達やカップルで一緒に働けますか？</summary><div class="a">可能です。「友達と一緒OK」「カップル歓迎」の条件で検索できます。同じ施設・同じ寮で働ける求人をご案内します。</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec register" id="register">
+  <div class="wrap reg-grid">
+    <div class="rv">
+      <h2>登録は1分。<br>まずは、話を聞くだけでも。</h2>
+      <p style="margin-top:12px;opacity:.95">登録したからといって、必ず働かないといけないわけではありません。「こんな求人があるんだ」を知るだけでもOK。</p>
+      <ul class="pts">
+        <li>履歴書・職務経歴書は不要</li>
+        <li>登録後、担当者から24時間以内にご連絡</li>
+        <li>しつこい営業電話は一切しません</li>
+      </ul>
+      <div style="margin-top:24px"><a class="btn btn-line btn-lg" href="#register">💬 LINEで登録する</a></div>
+    </div>
+    <div class="reg-card rv">
+      <form id="regForm">
+        <h3>無料会員登録フォーム</h3>
+        <div class="form-grid">
+          <label class="field"><span>お名前<span class="req">必須</span></span><input required placeholder="山田 太郎"></label>
+          <label class="field"><span>フリガナ<span class="req">必須</span></span><input required placeholder="ヤマダ タロウ"></label>
+          <label class="field"><span>生年月日<span class="req">必須</span></span><input type="date" required></label>
+          <label class="field"><span>電話番号<span class="req">必須</span></span><input type="tel" required placeholder="090-0000-0000"></label>
+          <label class="field full"><span>メールアドレス<span class="req">必須</span></span><input type="email" required placeholder="example@mail.com"></label>
+          <label class="field"><span>働きたい時期</span><select><option>すぐにでも</option><option>1ヶ月以内</option><option>2〜3ヶ月以内</option><option>未定</option></select></label>
+          <label class="field"><span>希望エリア</span><select><option>こだわらない</option><option>北海道・東北</option><option>関東・甲信越</option><option>東海・関西</option><option>中国・四国・九州</option><option>沖縄・離島</option></select></label>
+        </div>
+        <p style="font-size:11px;color:var(--ink-2);margin:14px 0">送信により<a href="#" style="text-decoration:underline">プライバシーポリシー</a>に同意したものとみなします。</p>
+        <button class="btn btn-primary btn-lg" style="width:100%" type="submit">無料で登録する</button>
+        <div class="or">または</div>
+        <a class="btn btn-line" style="width:100%" href="#register">💬 LINEで1分登録</a>
+      </form>
+      <div class="thanks" id="thanks">🎉 ご登録ありがとうございます！<small>担当者より24時間以内にご連絡します。<br>※このページはデモです。実際の送信は行われていません。</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap appdl">
+    <div class="rv">
+      <span class="en" style="font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--blue)">APP</span>
+      <h2>観光業専用の求人アプリ、近日公開</h2>
+      <p style="color:var(--ink-2);margin-top:10px">新着求人の通知、担当者とのチャット、勤怠・給与明細まで。スマホひとつで完結します。</p>
+      <div class="stores"><span class="store"> App Store</span><span class="store">▶ Google Play</span></div>
+    </div>
+    <div class="phone rv"><div></div></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><a class="logo" href="./"><span class="mark">観</span>観光HR</a><p style="margin-top:12px;line-height:1.8">宿泊・観光に特化した総合人材サービス<br>運営：株式会社ネオキャリア<br>〒163-0415 東京都新宿区西新宿2-1-1 新宿三井ビルディング</p>
+        <p style="margin-top:12px;display:flex;gap:10px"><a href="#">Instagram</a>・<a href="#">X</a>・<a href="#">YouTube</a>・<a href="#">LINE</a></p></div>
+      <div><h4>時期から探す</h4><ul><li><a href="#jobs">すぐに働ける</a></li><li><a href="#jobs">10月スタート</a></li><li><a href="#jobs">11月スタート</a></li><li><a href="#jobs">12月・冬スタート</a></li><li><a href="#jobs">年末年始の短期</a></li></ul></div>
+      <div><h4>エリアから探す</h4><ul><li><a href="#areas">北海道・東北</a></li><li><a href="#areas">関東・甲信越</a></li><li><a href="#areas">東海・関西</a></li><li><a href="#areas">中国・四国・九州</a></li><li><a href="#areas">沖縄・離島</a></li></ul></div>
+      <div><h4>観光HRについて</h4><ul><li><a href="#voices">体験談</a></li><li><a href="#faq">よくある質問</a></li><li><a href="business/">企業・施設の方へ</a></li><li><a href="#">運営会社</a></li><li><a href="#">プライバシーポリシー</a></li><li><a href="#">労働者派遣事業（派13-XXXXXX）</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 neo career Co., Ltd.</span><span>※本サイトはデモ用のサンプルページです。掲載求人は架空のものです。</span></div>
+  </div>
+</footer>
+
+<div class="fixed-cta"><a class="btn btn-line" href="#register">LINEで登録</a><a class="btn btn-primary" href="#register">無料で登録</a></div>
+
+<script>
+const IMGS=[
+"https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&q=60",
+"https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=600&q=60",
+"https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=600&q=60",
+"https://images.unsplash.com/photo-1542640244-7e672d6cef4e?auto=format&fit=crop&w=600&q=60",
+"https://images.unsplash.com/photo-1548783307-f63adc3f200b?auto=format&fit=crop&w=600&q=60",
+"https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=600&q=60",
+"https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=600&q=60",
+"https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=600&q=60"];
+const JOBS=[
+ {n:"箱根湯本 老舗温泉旅館",loc:"神奈川県／箱根",t:"仲居・配膳",start:"即日",term:"1ヶ月〜",w:1350,perks:["個室寮","温泉入り放題","食費無料"],r:4.7,rc:82,img:1,badge:"急募"},
+ {n:"ニセコ スキーリゾートホテル",loc:"北海道／ニセコ",t:"フロント（英語）",start:"12月上旬",term:"3ヶ月",w:1500,perks:["個室寮","リフト券無料","Wi-Fi"],r:4.8,rc:126,img:4,badge:"冬の人気"},
+ {n:"石垣島 ビーチリゾート",loc:"沖縄県／石垣島",t:"レストラン",start:"10月",term:"2ヶ月〜",w:1250,perks:["寮費無料","3食付","マリン割引"],r:4.5,rc:64,img:3},
+ {n:"白馬 ゲレンデ直結ロッジ",loc:"長野県／白馬",t:"リフト係・レンタル",start:"12月中旬",term:"〜3月末",w:1400,perks:["リフト券無料","友達OK","食費無料"],r:4.6,rc:98,img:2,badge:"着任ボーナス"},
+ {n:"草津温泉 高級旅館",loc:"群馬県／草津",t:"調理補助",start:"即日",term:"3ヶ月〜",w:1450,perks:["個室寮","温泉入り放題","前払OK"],r:4.4,rc:41,img:5},
+ {n:"京都 町家旅館",loc:"京都府／東山",t:"フロント・接客",start:"11月",term:"6ヶ月〜",w:1300,perks:["個室寮","Wi-Fi","正社員登用あり"],r:4.7,rc:57,img:6,badge:"新着"},
+ {n:"軽井沢 高原リゾート",loc:"長野県／軽井沢",t:"客室清掃",start:"即日",term:"1ヶ月〜",w:1300,perks:["寮費無料","短期OK","未経験歓迎"],r:4.3,rc:35,img:0},
+ {n:"宮古島 オーシャンビューホテル",loc:"沖縄県／宮古島",t:"ナイトフロント",start:"10月",term:"3ヶ月〜",w:1600,perks:["個室寮","Wi-Fi","車貸出"],r:4.6,rc:73,img:7,badge:"高時給"},
+ {n:"富良野 ラベンダーリゾート",loc:"北海道／富良野",t:"レストラン",start:"12月",term:"〜3月",w:1380,perks:["食費無料","スキー無料","カップルOK"],r:4.5,rc:52,img:4,badge:"新着"},
+ {n:"熱海 海辺の温泉ホテル",loc:"静岡県／熱海",t:"配膳・宴会",start:"即日",term:"年末年始",w:1500,perks:["個室寮","短期OK","温泉入り放題"],r:4.2,rc:29,img:1,badge:"短期"},
+ {n:"舞浜 テーマパーク周辺ホテル",loc:"千葉県／舞浜",t:"ベル・フロント",start:"11月",term:"6ヶ月〜",w:1420,perks:["寮費無料","都心アクセス","Wi-Fi"],r:4.4,rc:88,img:0,badge:"新着"},
+ {n:"湯布院 隠れ家旅館",loc:"大分県／湯布院",t:"仲居",start:"即日",term:"2ヶ月〜",w:1350,perks:["個室寮","3食付","温泉入り放題"],r:4.8,rc:44,img:5},
+];
+const card=j=>`<article class="job"><div class="ph"><img src="${IMGS[j.img]}" alt="" loading="lazy">${j.badge?`<span class="badge">${j.badge}</span>`:""}<button class="fav" aria-label="お気に入り">♥</button></div>
+<div class="body"><div class="loc">📍 ${j.loc}</div><h3>${j.n}／${j.t}</h3><div class="meta"><span>📅 ${j.start}〜</span><span>⏱ ${j.term}</span></div>
+<div class="wage"><small>時給</small><b>${j.w.toLocaleString()}</b><small>円</small></div>
+<div class="perks">${j.perks.map(p=>`<span>${p}</span>`).join("")}</div>
+<div class="rate"><b>★★★★★</b>${j.r} <span>(${j.rc}件の口コミ)</span></div></div></article>`;
+const rows={soon:JOBS.filter(j=>j.start==="即日"),high:[...JOBS].sort((a,b)=>b.w-a.w).slice(0,6),new:[...JOBS].reverse().slice(0,7)};
+document.querySelectorAll("[data-row]").forEach(el=>el.innerHTML=rows[el.dataset.row].map(card).join(""));
+document.addEventListener("click",e=>{const f=e.target.closest(".fav");if(f){f.classList.toggle("on");e.preventDefault();}});
+document.getElementById("searchBtn").onclick=()=>{document.getElementById("immediate").scrollIntoView({behavior:"smooth"});};
+document.getElementById("menuBtn").onclick=()=>document.getElementById("nav").classList.toggle("open");
+document.getElementById("nav").addEventListener("click",()=>document.getElementById("nav").classList.remove("open"));
+document.getElementById("regForm").addEventListener("submit",e=>{e.preventDefault();e.target.style.display="none";document.getElementById("thanks").style.display="block";});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
