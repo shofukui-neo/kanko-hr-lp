@@ -22,7 +22,8 @@ h1,h2,h3,.disp{font-family:var(--disp)}
 .logo .mark i{width:9px;height:9px;border-radius:50%;background:#fff;display:block}
 .logo .mark i.o{background:var(--orange)}
 .logo b{font-family:var(--disp);font-weight:900;font-size:19px;letter-spacing:-.01em;line-height:1.1}
-.logo b small{display:block;font-size:10px;font-weight:600;color:var(--ink-2);letter-spacing:.04em;margin-top:3px}
+.logo b small{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:600;color:var(--ink-2);letter-spacing:.04em;margin-top:4px}
+.logo b small .nclogo{height:14px}
 .header .wrap{height:76px}
 .header-cta .btn .sm{display:none}
 .header .nav{gap:18px;font-size:13.5px;flex:0 0 auto}
@@ -55,7 +56,9 @@ h1,h2,h3,.disp{font-family:var(--disp)}
 .bname{font-family:var(--disp);font-weight:900;font-size:clamp(30px,5.6vw,66px);line-height:1.08;letter-spacing:-.015em;text-shadow:0 6px 30px rgba(0,0,0,.3)}
 .bname em{font-style:normal;color:#ffd08a}
 .btag{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:clamp(8px,1vw,13px);font-size:clamp(11px,1.1vw,13.5px);font-weight:700;letter-spacing:.05em;opacity:.92}
-.btag b{font-family:var(--en);font-weight:800;letter-spacing:-.02em;background:#fff;color:var(--navy);padding:3px 10px;border-radius:6px;font-size:clamp(11px,1.05vw,13px)}
+.btag .nclogo{height:clamp(19px,1.9vw,25px)}
+.btag{gap:13px}
+.btag .nc-rule{height:clamp(15px,1.5vw,19px);background:#fff}
 .fvline{height:1px;background:linear-gradient(90deg,rgba(255,255,255,.55),rgba(255,255,255,0));margin:clamp(26px,3.4vw,44px) 0 clamp(18px,2.2vw,28px);max-width:720px}
 .fv .kick{font-size:clamp(12px,1.15vw,14px);font-weight:800;letter-spacing:.16em;color:#ffd08a;font-family:var(--en);text-transform:uppercase}
 .fv h1{font-size:clamp(32px,5.8vw,70px);font-weight:900;line-height:1.18;letter-spacing:-.02em;margin:12px 0 0}
@@ -170,6 +173,8 @@ h1,h2,h3,.disp{font-family:var(--disp)}
 
 /* ===== 基盤 ===== */
 .base{padding:100px 0;background:var(--sky-2)}
+img.sec-logo{height:36px;display:block;margin:0 auto 18px}
+@media(max-width:560px){img.sec-logo{height:28px}}
 .phases{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:36px}
 @media(max-width:900px){.phases{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:520px){.phases{grid-template-columns:1fr 1fr}}
@@ -227,6 +232,8 @@ h1,h2,h3,.disp{font-family:var(--disp)}
 .step .dur{display:inline-block;font-size:11px;font-weight:800;padding:3px 10px;border-radius:6px;background:var(--navy);color:#fff;margin-bottom:10px;font-family:var(--en);letter-spacing:.05em}
 .step p{font-size:13.5px;color:var(--ink-2);line-height:1.85}
 
+.foot-logo{display:inline-block;margin:16px 0 12px}
+.foot-logo .nclogo{height:26px;opacity:.95}
 /* ===== brand band ===== */
 .brandband{background:var(--navy);color:#fff;padding:96px 0;text-align:center;position:relative;overflow:hidden}
 .brandband::before{content:"";position:absolute;left:50%;top:-40%;width:80%;height:180%;transform:translateX(-50%);background:radial-gradient(circle at 50% 50%,rgba(255,122,26,.22),transparent 60%)}
@@ -239,7 +246,7 @@ h1,h2,h3,.disp{font-family:var(--disp)}
 .bb-lead{font-family:var(--disp);font-weight:900;font-size:clamp(18px,2.6vw,28px);margin-top:22px;line-height:1.5}
 .bb-sub{font-size:clamp(13px,1.4vw,15px);line-height:2;opacity:.86;margin-top:16px}
 .bb-badge{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:30px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);padding:9px 16px;border-radius:999px;font-size:12.5px;font-weight:700;line-height:1.6}
-.bb-badge b{font-family:var(--en);font-weight:800;letter-spacing:-.02em;background:#fff;color:var(--navy);padding:3px 10px;border-radius:6px;font-size:12px}
+.bb-badge .nclogo{height:19px}
 @media(max-width:640px){.brandband{padding:70px 0}}
 
 /* ===== contact ===== */
@@ -261,6 +268,9 @@ h1,h2,h3,.disp{font-family:var(--disp)}
 @media(max-width:560px){.contact-card{padding:22px 18px}}
 .contact-card h3{color:var(--navy);font-size:19px;font-weight:900;text-align:center}
 .contact-card .sub{font-size:12.5px;color:var(--ink-2);text-align:center;margin:6px 0 18px}
+.card-credit{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line);font-size:11px;font-weight:700;color:var(--ink-2);letter-spacing:.04em}
+.card-credit .nclogo{height:16px}
+.card-credit .nm{color:var(--navy)}
 
 .fixed-cta{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px;display:none;gap:10px}
 .fixed-cta .btn{flex:1;padding:12px}
@@ -291,7 +301,7 @@ h1,h2,h3,.disp{font-family:var(--disp)}
 
 <header class="header">
   <div class="wrap">
-    <a class="logo" href="./"><span class="mark"><span><i></i><i class="o"></i></span></span><b>みんなの観光HR部<small>neocareer ── 宿泊・観光に特化した人材事業</small></b></a>
+    <a class="logo" href="./"><span class="mark"><span><i></i><i class="o"></i></span></span><b>みんなの観光HR部<small><img class="nclogo" src="../assets/neocareer.png" alt="neocareer" width="320" height="101">宿泊・観光に特化した人材事業</small></b></a>
     <nav class="nav" id="nav">
       <a href="#shift">前提が変わった</a>
       <a href="#layers">3つの打ち手</a>
@@ -315,7 +325,7 @@ h1,h2,h3,.disp{font-family:var(--disp)}
       <span class="bmark"><i></i><i class="o"></i></span>
       <div>
         <div class="bname">みんなの<em>観光HR部</em></div>
-        <div class="btag"><b>neocareer</b>宿泊・観光に特化した人材事業</div>
+        <div class="btag"><img class="nclogo" src="../assets/neocareer-white.png" alt="neocareer" width="320" height="101"><span class="nc-rule"></span>宿泊・観光に特化した人材事業</div>
       </div>
     </div>
     <div class="fvline"></div>
@@ -460,7 +470,7 @@ h1,h2,h3,.disp{font-family:var(--disp)}
 <!-- 基盤 -->
 <section class="base" id="base">
   <div class="wrap">
-    <div class="sec-head rv"><span class="en">Foundation</span><h2>ネオキャリアの基盤を、観光業に。</h2><p>「集める」「繋ぐ」「見極める」「惹き付ける」「育成する」──採用に関わる全フェーズを自社で。</p></div>
+    <div class="sec-head rv"><img class="nclogo sec-logo" src="../assets/neocareer.png" alt="株式会社ネオキャリア" width="320" height="101"><span class="en">Foundation</span><h2>ネオキャリアの基盤を、観光業に。</h2><p>「集める」「繋ぐ」「見極める」「惹き付ける」「育成する」──採用に関わる全フェーズを自社で。</p></div>
     <div class="phases rv">
       <div class="phase"><span class="ic"><svg class="i"><use href="#ic-megaphone"/></svg></span><b>集める</b><small>求人広告・Web広告・住み込み集客</small></div>
       <div class="phase"><span class="ic"><svg class="i"><use href="#ic-link"/></svg></span><b>繋ぐ</b><small>人材紹介・派遣・外国人材</small></div>
@@ -540,7 +550,7 @@ h1,h2,h3,.disp{font-family:var(--disp)}
     <h2>みんなの<em>観光HR部</em></h2>
     <p class="bb-lead">ひとつの施設に、ひとつの人事部を。</p>
     <p class="bb-sub">人を採る。から、人を活かす。へ。<br>観光業の人手不足を、採用方法・働き方・業務そのものの3レイヤーで解きます。</p>
-    <div class="bb-badge"><b>neocareer</b>宿泊・観光に特化した人材事業／株式会社ネオキャリア</div>
+    <div class="bb-badge"><img class="nclogo" src="../assets/neocareer-white.png" alt="neocareer" width="320" height="101"><span class="nc-rule"></span>宿泊・観光に特化した人材事業／株式会社ネオキャリア</div>
   </div>
 </section>
 
@@ -579,6 +589,7 @@ h1,h2,h3,.disp{font-family:var(--disp)}
         <button class="btn btn-primary btn-lg" style="width:100%" type="submit">ヒアリングを申し込む（無料）</button>
       </form>
       <div class="thanks" id="thanks">お申し込みありがとうございます。<small>担当者より1営業日以内にご連絡します。<br>※このページはデモです。実際の送信は行われていません。</small></div>
+      <div class="card-credit"><span>運営</span><img class="nclogo" src="../assets/neocareer.png" alt="neocareer" width="320" height="101"><span class="nm">株式会社ネオキャリア</span></div>
     </div>
   </div>
 </section>
@@ -586,7 +597,7 @@ h1,h2,h3,.disp{font-family:var(--disp)}
 <footer class="footer">
   <div class="wrap">
     <div class="footer-grid">
-      <div><a class="logo" href="./"><span class="mark"><span><i></i><i class="o"></i></span></span><b style="color:#fff">みんなの観光HR部</b></a><p style="margin-top:12px;line-height:1.8">人を採る。から、人を活かす。へ。<br>運営：株式会社ネオキャリア<br>〒163-0415 東京都新宿区西新宿2-1-1 新宿三井ビルディング</p></div>
+      <div><a class="logo" href="./"><span class="mark"><span><i></i><i class="o"></i></span></span><b style="color:#fff">みんなの観光HR部</b></a><p style="margin-top:12px;line-height:1.8">人を採る。から、人を活かす。へ。</p><a href="https://www.neo-career.co.jp/" target="_blank" rel="noopener" class="foot-logo"><img class="nclogo" src="../assets/neocareer-white.png" alt="株式会社ネオキャリア" width="320" height="101"></a><p style="line-height:1.8">運営：株式会社ネオキャリア<br>〒163-0415 東京都新宿区西新宿2-1-1 新宿三井ビルディング</p></div>
       <div><h4>3つの打ち手</h4><ul><li><a href="#layers">LAYER 01｜採用方法を変える</a></li><li><a href="#layers">LAYER 02｜働き方を変える</a></li><li><a href="#layers">LAYER 03｜業務そのものを変える</a></li></ul></div>
       <div><h4>観光HR部について</h4><ul><li><a href="#shift">前提が変わった</a></li><li><a href="#minna">「みんなの」</a></li><li><a href="#base">ネオキャリア基盤</a></li><li><a href="#cases">導入イメージ</a></li><li><a href="#faq">よくあるご質問</a></li></ul></div>
       <div><h4>関連サイト</h4><ul><li><a href="../">TABIWORK（求職者向け）</a></li><li><a href="https://www.neo-career.co.jp/humanresource/" target="_blank" rel="noopener">ネオキャリア 人材サービス一覧</a></li><li><a href="https://www.neo-career.co.jp/" target="_blank" rel="noopener">株式会社ネオキャリア</a></li><li><a href="#">プライバシーポリシー</a></li><li><a href="#">労働者派遣事業許可番号</a></li></ul></div>

@@ -86,3 +86,8 @@ ul{list-style:none}
 .req{color:var(--orange);font-size:11px;margin-left:4px}
 .thanks{display:none;text-align:center;padding:40px 20px;color:var(--navy);font-weight:700;font-size:18px}
 .thanks small{display:block;font-weight:400;color:var(--ink-2);font-size:14px;margin-top:8px}
+/* ===== neocareer logo ===== */
+img.nclogo{display:inline-block;width:auto;height:20px;vertical-align:middle;flex:0 0 auto}
+.nc-credit{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11.5px;font-weight:700;letter-spacing:.02em;line-height:1.5}
+.nc-credit img.nclogo{height:16px}
+.nc-rule{display:inline-block;width:1px;height:14px;background:currentColor;opacity:.3;flex:0 0 auto}

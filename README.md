@@ -20,10 +20,17 @@
 ## 構成
 
 ```
-index.html            求職者向けトップ
-business/index.html   企業向けサービスLP
-assets/common.css     共通スタイル（色・ヘッダー・フッター・フォーム・FAQ）
+index.html                    求職者向けトップ（TABIWORK）
+business/index.html           企業向けサービスLP（みんなの観光HR部）
+assets/common.css             共通スタイル（色・ヘッダー・フッター・フォーム・FAQ）
+assets/neocareer.png          ネオキャリアロゴ（明るい背景用）
+assets/neocareer-white.png    ネオキャリアロゴ（濃い背景用・白抜き＋ブランドシアン）
 ```
+
+## ネオキャリアロゴの掲出箇所
+
+- **TABIWORK（/）**：差別化セクション末尾／「旅のあとも、相談できる。」カード／「その先の安心」カード／登録フォーム下／フッター
+- **みんなの観光HR部（/business/）**：ヘッダー（ブランド名の下）／FVのブランドロックアップ／「ネオキャリアの基盤を、観光業に。」見出し上／ブランドバンド／申込フォーム下／フッター
 
 - 求人カードは `index.html` 末尾の `JOBS` 配列（架空データ）から生成
 - 画像は Unsplash の URL 参照。差し替える場合は `assets/img/` に置いて `src` を変更
