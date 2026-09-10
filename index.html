@@ -43,22 +43,33 @@ h1,h2,h3{font-family:var(--disp)}
 @media(max-width:900px){.fixed-cta{display:flex}body{padding-bottom:64px}}
 
 /* ===== FV ===== */
-.fv{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#1c2530}
-.fv .bg{position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=2000&q=75") center/cover;transform:scale(1.04);animation:kb 18s ease-in-out infinite alternate}
+.fv{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;
+  background:linear-gradient(180deg,#7fd4e8 0%,#43b3d4 34%,#1f89b4 58%,#12617f 100%)}
+.fv .bg{position:absolute;inset:0;background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2200&q=78"),url("https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=2000&q=75");background-size:cover,cover;background-position:center 58%,center 55%;background-repeat:no-repeat,no-repeat;transform:scale(1.04);animation:kb 20s ease-in-out infinite alternate}
 @keyframes kb{to{transform:scale(1.12) translateY(-1.5%)}}
-.fv::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,23,28,.15) 0%,rgba(20,23,28,.05) 35%,rgba(20,23,28,.72) 100%)}
-.fv .wrap{position:relative;z-index:1;padding:120px 0 72px}
-.fv .brand{font-family:var(--en);font-weight:800;letter-spacing:.2em;font-size:13px;opacity:.9}
+/* 太陽のグロー（リゾートの光） */
+.fv .sun{position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(46% 42% at 76% 16%,rgba(255,224,168,.62) 0%,rgba(255,186,110,.30) 34%,transparent 68%)}
+/* ヤシの葉シルエット */
+.fv .palm{position:absolute;z-index:1;pointer-events:none;opacity:.32;filter:drop-shadow(0 8px 26px rgba(0,0,0,.3))}
+.fv .palm.l{top:-19%;left:-15%;width:clamp(300px,36vw,620px);transform:rotate(7deg)}
+.fv .palm.r{top:-16%;right:-12%;width:clamp(280px,34vw,600px);transform:scaleX(-1) rotate(10deg)}
+.fv::after{content:"";position:absolute;inset:0;z-index:1;background:
+  linear-gradient(180deg,rgba(10,52,74,.28) 0%,rgba(10,52,74,.04) 30%,rgba(6,34,50,.55) 74%,rgba(4,24,38,.84) 100%),
+  linear-gradient(94deg,rgba(4,30,46,.50) 0%,rgba(4,30,46,.12) 46%,transparent 72%)}
+.fv .wrap{position:relative;z-index:2;padding:120px 0 72px}
+.fv .brand{font-family:var(--en);font-weight:800;letter-spacing:.2em;font-size:13px;opacity:.95;display:inline-flex;align-items:center;gap:11px}
+.fv .brand::after{content:"RESORT WORK IN JAPAN";font-size:10px;letter-spacing:.22em;font-weight:700;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.42);backdrop-filter:blur(6px)}
 .fv h1{font-size:clamp(46px,8.6vw,120px);font-weight:900;line-height:1.08;letter-spacing:-.02em;margin:14px 0 22px;text-shadow:0 6px 40px rgba(0,0,0,.35)}
 .fv .lead{font-size:clamp(15px,1.7vw,19px);line-height:2;max-width:560px;font-weight:500;text-shadow:0 2px 12px rgba(0,0,0,.4)}
 .fv .ctas{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
 .fv .ctas .ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.55);backdrop-filter:blur(6px)}
-.fv .scroll{position:absolute;right:24px;bottom:28px;z-index:1;font-family:var(--en);font-size:10px;letter-spacing:.3em;writing-mode:vertical-rl;opacity:.8}
+.fv .scroll{position:absolute;right:24px;bottom:28px;z-index:2;font-family:var(--en);font-size:10px;letter-spacing:.3em;writing-mode:vertical-rl;opacity:.8}
 .fv .scroll::after{content:"";display:block;width:1px;height:48px;background:#fff;margin:10px auto 0;animation:dn 1.8s infinite}
 @keyframes dn{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 .fv .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
-.fv .tags span{font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
-@media(max-width:640px){.diff .after br,.empathy .answer h2 br{display:none}.fv{min-height:88vh}.fv .wrap{padding:100px 0 64px}.fv .ctas .btn{width:100%}.fv .scroll{display:none}}
+.fv .tags span{font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.46);backdrop-filter:blur(6px);text-shadow:0 1px 6px rgba(0,4,10,.35)}
+@media(max-width:640px){.fv .palm.l{top:-13%;left:-30%;width:330px}.fv .palm.r{top:-9%;right:-32%;width:300px}.diff .after br,.empathy .answer h2 br{display:none}.fv{min-height:88vh}.fv .wrap{padding:100px 0 64px}.fv .ctas .btn{width:100%}.fv .scroll{display:none}}
 
 /* ===== ticker ===== */
 .ticker{background:var(--ink);color:#fff;overflow:hidden;padding:14px 0;font-family:var(--en);font-weight:700;letter-spacing:.12em;font-size:13px;white-space:nowrap}
@@ -304,6 +315,9 @@ h1,h2,h3{font-family:var(--disp)}
 <!-- FV -->
 <section class="fv">
   <div class="bg"></div>
+  <div class="sun"></div>
+  <svg class="palm l" viewBox="-40 -110 460 380" fill="none" aria-hidden="true"><g stroke="#06342a" stroke-linecap="round" fill="none"><path d="M6 10C150 4 268 58 372 186" stroke-width="7"/><path stroke-width="4.4" d="M31.6 9.6Q34.0 32.7 13.6 51.4 M31.6 9.6Q34.4 -13.5 14.4 -32.6 M46.8 9.9Q48.8 40.3 21.4 64.0 M46.8 9.9Q51.3 -20.2 25.9 -46.0 M61.7 10.8Q63.0 47.2 29.3 74.4 M61.7 10.8Q68.3 -25.0 38.9 -56.9 M76.4 12.1Q76.5 53.7 37.0 83.5 M76.4 12.1Q85.3 -28.5 53.1 -66.0 M91.0 13.9Q89.5 60.0 44.6 91.5 M91.0 13.9Q102.4 -30.7 68.1 -73.5 M105.4 16.2Q101.9 66.2 52.0 98.6 M105.4 16.2Q119.4 -31.8 83.8 -79.5 M119.5 19.0Q114.0 72.3 59.4 105.0 M119.5 19.0Q136.4 -31.8 100.2 -84.1 M133.6 22.3Q125.6 78.3 66.8 110.7 M133.6 22.3Q153.3 -30.6 117.2 -87.2 M147.4 26.1Q137.0 84.2 74.4 115.8 M147.4 26.1Q170.1 -28.3 134.5 -88.8 M161.1 30.4Q148.1 90.0 82.2 120.2 M161.1 30.4Q186.6 -25.0 152.2 -88.8 M174.6 35.2Q159.0 95.7 90.3 124.2 M174.6 35.2Q202.8 -20.5 170.0 -87.2 M187.9 40.5Q169.8 101.4 98.9 127.7 M187.9 40.5Q218.7 -15.0 188.0 -84.0 M201.1 46.4Q180.5 107.1 108.1 130.9 M201.1 46.4Q234.3 -8.4 205.8 -79.1 M214.1 52.7Q191.3 112.7 118.0 133.8 M214.1 52.7Q249.3 -0.9 223.5 -72.7 M227.0 59.6Q202.1 118.3 128.6 136.6 M227.0 59.6Q263.9 7.7 240.9 -64.5 M239.7 67.0Q213.1 124.0 140.0 139.4 M239.7 67.0Q277.9 17.2 257.8 -54.8 M252.3 75.0Q224.3 129.7 152.4 142.2 M252.3 75.0Q291.4 27.6 274.2 -43.5 M264.7 83.4Q235.8 135.5 165.6 145.2 M264.7 83.4Q304.2 38.8 290.0 -30.6 M277.0 92.5Q247.5 141.5 179.8 148.6 M277.0 92.5Q316.4 50.9 305.0 -16.2 M289.2 102.0Q259.6 147.7 195.1 152.2 M289.2 102.0Q327.9 63.8 319.2 -0.3 M301.2 112.1Q272.1 154.1 211.4 156.4 M301.2 112.1Q338.7 77.4 332.4 17.0 M313.1 122.8Q285.0 160.7 228.8 161.2 M313.1 122.8Q348.7 91.8 344.7 35.7 M324.9 134.0Q298.3 167.7 247.3 166.5 M324.9 134.0Q358.0 106.8 355.9 55.9 M336.5 145.8Q312.2 174.8 267.1 172.5 M336.5 145.8Q366.5 122.6 366.0 77.5 M348.0 158.1Q326.7 182.2 288.5 179.2 M348.0 158.1Q374.1 139.1 374.7 100.8 M359.5 171.0Q342.1 189.6 312.0 186.4 M359.5 171.0Q380.4 156.6 381.7 126.4"/></g></svg>
+  <svg class="palm r" viewBox="-40 -110 460 380" fill="none" aria-hidden="true"><g stroke="#06342a" stroke-linecap="round" fill="none"><path d="M6 10C150 4 268 58 372 186" stroke-width="7"/><path stroke-width="4.4" d="M31.6 9.6Q34.0 32.7 13.6 51.4 M31.6 9.6Q34.4 -13.5 14.4 -32.6 M46.8 9.9Q48.8 40.3 21.4 64.0 M46.8 9.9Q51.3 -20.2 25.9 -46.0 M61.7 10.8Q63.0 47.2 29.3 74.4 M61.7 10.8Q68.3 -25.0 38.9 -56.9 M76.4 12.1Q76.5 53.7 37.0 83.5 M76.4 12.1Q85.3 -28.5 53.1 -66.0 M91.0 13.9Q89.5 60.0 44.6 91.5 M91.0 13.9Q102.4 -30.7 68.1 -73.5 M105.4 16.2Q101.9 66.2 52.0 98.6 M105.4 16.2Q119.4 -31.8 83.8 -79.5 M119.5 19.0Q114.0 72.3 59.4 105.0 M119.5 19.0Q136.4 -31.8 100.2 -84.1 M133.6 22.3Q125.6 78.3 66.8 110.7 M133.6 22.3Q153.3 -30.6 117.2 -87.2 M147.4 26.1Q137.0 84.2 74.4 115.8 M147.4 26.1Q170.1 -28.3 134.5 -88.8 M161.1 30.4Q148.1 90.0 82.2 120.2 M161.1 30.4Q186.6 -25.0 152.2 -88.8 M174.6 35.2Q159.0 95.7 90.3 124.2 M174.6 35.2Q202.8 -20.5 170.0 -87.2 M187.9 40.5Q169.8 101.4 98.9 127.7 M187.9 40.5Q218.7 -15.0 188.0 -84.0 M201.1 46.4Q180.5 107.1 108.1 130.9 M201.1 46.4Q234.3 -8.4 205.8 -79.1 M214.1 52.7Q191.3 112.7 118.0 133.8 M214.1 52.7Q249.3 -0.9 223.5 -72.7 M227.0 59.6Q202.1 118.3 128.6 136.6 M227.0 59.6Q263.9 7.7 240.9 -64.5 M239.7 67.0Q213.1 124.0 140.0 139.4 M239.7 67.0Q277.9 17.2 257.8 -54.8 M252.3 75.0Q224.3 129.7 152.4 142.2 M252.3 75.0Q291.4 27.6 274.2 -43.5 M264.7 83.4Q235.8 135.5 165.6 145.2 M264.7 83.4Q304.2 38.8 290.0 -30.6 M277.0 92.5Q247.5 141.5 179.8 148.6 M277.0 92.5Q316.4 50.9 305.0 -16.2 M289.2 102.0Q259.6 147.7 195.1 152.2 M289.2 102.0Q327.9 63.8 319.2 -0.3 M301.2 112.1Q272.1 154.1 211.4 156.4 M301.2 112.1Q338.7 77.4 332.4 17.0 M313.1 122.8Q285.0 160.7 228.8 161.2 M313.1 122.8Q348.7 91.8 344.7 35.7 M324.9 134.0Q298.3 167.7 247.3 166.5 M324.9 134.0Q358.0 106.8 355.9 55.9 M336.5 145.8Q312.2 174.8 267.1 172.5 M336.5 145.8Q366.5 122.6 366.0 77.5 M348.0 158.1Q326.7 182.2 288.5 179.2 M348.0 158.1Q374.1 139.1 374.7 100.8 M359.5 171.0Q342.1 189.6 312.0 186.4 M359.5 171.0Q380.4 156.6 381.7 126.4"/></g></svg>
   <div class="wrap">
     <div class="brand">TABIWORK</div>
     <h1>旅の、<br>その先まで。</h1>
@@ -574,7 +588,7 @@ h1,h2,h3{font-family:var(--disp)}
 <footer class="footer">
   <div class="wrap">
     <div class="footer-grid">
-      <div><a class="logo" href="./"><span class="mark"><i></i></span>TABIWORK</a><p style="margin-top:12px;line-height:1.8">旅の、その先まで。</p><a href="https://www.neo-career.co.jp/" target="_blank" rel="noopener" class="foot-logo"><img class="nclogo" src="assets/neocareer-white.png" alt="株式会社ネオキャリア" width="320" height="101"></a><p style="line-height:1.8">運営：株式会社ネオキャリア<br>〒163-0415 東京都新宿区西新宿2-1-1 新宿三井ビルディング</p>
+      <div><a class="logo" href="./"><span class="mark"><i></i></span>TABIWORK</a><p style="margin-top:12px;line-height:1.8">旅の、その先まで。</p><a href="https://www.neo-career.co.jp/" target="_blank" rel="noopener" class="foot-logo"><img class="nclogo" src="assets/neocareer-white.png" alt="株式会社ネオキャリア" width="320" height="101"></a><p style="line-height:1.8">運営：株式会社ネオキャリア<br>新宿本社　〒160-0023<br>東京都新宿区西新宿1-22-2 新宿サンエービル<br>TEL：03-5908-8405／FAX：03-5908-8158</p>
         <p style="margin-top:12px;display:flex;gap:10px"><a href="#">Instagram</a>・<a href="#">TikTok</a>・<a href="#">X</a>・<a href="#">LINE</a></p></div>
       <div><h4>TABIWORK</h4><ul><li><a href="#about">TABIWORKとは</a></li><li><a href="#beyond">旅の、その先</a></li><li><a href="#voices">ストーリー</a></li><li><a href="#faq">よくある質問</a></li></ul></div>
       <div><h4>旅先を探す</h4><ul><li><a href="#free">北海道・東北</a></li><li><a href="#free">関東・甲信越</a></li><li><a href="#free">東海・関西</a></li><li><a href="#free">中国・四国・九州</a></li><li><a href="#free">沖縄・離島</a></li></ul></div>
